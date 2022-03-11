@@ -1,0 +1,119 @@
+body{
+    background-image: url(./image/to\ do\ list.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    background-attachment: fixed;
+    /*фиксация фонового изображдения*/
+}
+.container{
+    display: flex;
+    justify-content: center;
+}
+.headerall{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    font-size: 50px;
+    font-weight: bolder;
+    background: linear-gradient(to right, orange, red, brown);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    margin-right: 15px;
+    }
+
+    .field {
+        display: block;
+        background-color: khaki;
+        color:teal;
+        font-size: 15px;
+        border: 3px solid transparent;
+        border-image: linear-gradient(135deg, #12BCB0 20%, #FABE0E 70%);
+        border-image-slice: 1;
+       font-weight: bold;
+       opacity: 60%;
+      
+    }
+   
+.inputField{
+    padding: 10px;
+    width: 40%;
+    background: khaki;
+    border-radius: 10px;
+    color: teal;
+    font-weight: bold;
+    font-size: 15px;
+    height: 20px;
+    margin-right: 5px;
+    border: 3px solid transparent;
+    border-image: linear-gradient(135deg, #12BCB0 20%, #FABE0E 70%);
+    border-image-slice: 1;
+    /*последние три команды...градиент.. делают границы разноцветные*/
+   }
+.btn{
+    background: linear-gradient(to left,orange, red, brown);
+    /*задают градиент фона кнопки*/
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    max-width: 50px;
+    border: 3px solid transparent;
+    border-image: linear-gradient(135deg, #12BCB0 20%, #FABE0E 70%);
+    border-image-slice: 1;
+   }
+
+   .btn:hover{
+    filter: saturate(500%);
+   }
+.toDoAdded{
+    background: khaki;
+    list-style-type: none;
+    border-radius: 15px;
+    padding: 15px;
+    border: 1px solid none;
+    width: 50%;
+    color: teal;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    overflow-wrap: break-word;
+    /*переносит текст на другую строку
+     который выходит за рамки блока;*/
+}
+.list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.action{
+    background: brown;
+    color:khaki;
+    font-style: italic;
+    text-decoration: line-through;
+    transition: all 2s ease;
+    font-weight: normal;
+    opacity: 50%;
+}
+
+@media all and(max-width: 800px){
+    h1{
+        font-size: 40px;
+    }
+}
+@media all and (max-width: 540px){
+    h1{
+        font-size: 20px;
+    }
+    .headerall{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      
+    }
+    .inputField{
+        margin-top: 10px;
+    }
+}
